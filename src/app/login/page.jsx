@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { URL_BASE } from "@/constants";
 import axios from "axios";
@@ -11,6 +11,16 @@ export default function Login() {
   const [err, setErr] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  const token = localStorage.getItem("token");
+  useLayoutEffect(() => {
+    if (token) {
+      router.push("/");
+    }
+  }, []);
+  if (token) {
+    return null;
+  }
 
   const onSubmit = async (data) => {
     if (data.email && data.password) {
