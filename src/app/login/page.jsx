@@ -61,10 +61,13 @@ export default function Login() {
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-[477px] h-[549px] bg-glassColor border-[1px] rounded-[28px] mx-auto flex flex-col items-center p-20 justify-between"
+        className="w-[477px] h-[549px] bg-glassColor border-[1px] rounded-[28px] mx-auto flex flex-col items-center px-20 py-10 justify-between"
       >
         <div className="flex flex-col gap-6 w-full">
-          <h2 className="uppercase font-bold shadow-shadow text-center">
+          <h2
+            className="uppercase font-bold text-center text-4xl"
+            style={{ textShadow: "0px 3px 8px rgb(132, 57, 249)" }}
+          >
             login
           </h2>
           <span className="text-red-600 text-center h-2">{err}</span>

@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+    background-color: #050310;
+    scroll-behavior: smooth;
+    background-image: url("/bg_filter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
 
 .login_container{
     height: 100vh;
-    background-image: url("../assets/login_bg.png");
+    background-image: url("/login_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
