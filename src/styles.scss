@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Days One";
+    src: url("./assets/fonts/DaysOne-Regular.ttf");
+}
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url("./assets/fonts/BaiJamjuree-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url("./assets/fonts/BaiJamjuree-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url("./assets/fonts/BaiJamjuree-Bold.ttf");
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Days One", sans-serif;
 }
