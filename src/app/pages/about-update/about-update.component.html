@@ -1,0 +1,59 @@
+<main class="about">
+  <div class="wrapper">
+    <h1>Sobre mí</h1>
+    <form>
+      <!-- left -->
+      <div class="left">
+        <div>
+          <label for="location">Localidad:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            formControlName="location"
+          />
+        </div>
+        <div>
+          <label for="description">Descripción:</label>
+          <textarea
+            id="description"
+            name="description"
+            formControlName="description"
+          ></textarea>
+          <textarea
+            name="description2"
+            id="description2"
+            formControlName="description2"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="right">
+        <div>
+          <img src="../../../assets/icons/pc.png" alt="pc icon" />
+          <input
+            type="text"
+            id="sistem"
+            name="sistem"
+            formControlName="sistem"
+          />
+        </div>
+        <div>
+          <img src="../../../assets/icons/ide.png" alt="ide icon" />
+          <input type="text" id="ide" name="ide" formControlName="ide" />
+        </div>
+        <div>
+          <img src="../../../assets/icons/hobby.png" alt="hobby icon" />
+          <input type="text" id="hobby" name="hobby" formControlName="hobby" />
+        </div>
+        <div>
+          <img src="../../../assets/icons/music.png" alt="music icon" />
+          <input type="text" id="music" name="music" formControlName="music" />
+        </div>
+
+        <button class="button">Actualizar</button>
+      </div>
+    </form>
+  </div>
+</main>
