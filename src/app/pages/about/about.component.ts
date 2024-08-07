@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { AboutService } from '../../services/about.service';
 import { Router } from '@angular/router';
+import { NavbarComponent } from '../../shared/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [NavbarComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
