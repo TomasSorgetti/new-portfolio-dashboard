@@ -1,6 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { config } from '../config/config';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { IAbout } from '../interfaces/About';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +16,12 @@ export class AboutService {
 
   getAbout() {
     return this.http.get<any>(`${this.baseUrl}/about`);
+  }
+  updateAbout(data : IAbout) {
+    return this.http.put<any>(`${this.baseUrl}/about`, data, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    });
   }
 }

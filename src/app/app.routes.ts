@@ -4,7 +4,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { AboutUpdateComponent } from './pages/about-update/about-update.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'about', component: AboutComponent },
     { path: 'about-update', component: AboutUpdateComponent },
+    
+    { path: '**', redirectTo: 'login', pathMatch: 'full' },
 ];

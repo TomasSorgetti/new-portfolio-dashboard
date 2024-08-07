@@ -1,7 +1,7 @@
 <main class="about">
   <div class="wrapper">
     <h1>Sobre mí</h1>
-    <form>
+    <form [formGroup]="formModel">
       <!-- left -->
       <div class="left">
         <div>
@@ -52,7 +52,7 @@
           <input type="text" id="music" name="music" formControlName="music" />
         </div>
 
-        <button class="button">Actualizar</button>
+        <button (click)="handleSubmit()" class="button">Actualizar</button>
       </div>
     </form>
   </div>
