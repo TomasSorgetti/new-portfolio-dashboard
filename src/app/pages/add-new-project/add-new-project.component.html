@@ -1,0 +1,23 @@
+<main class="add_new_project">
+  <h1>Crear nuevo proyecto</h1>
+  <form [formGroup]="formModel" (ngSubmit)="handleSubmit()">
+    <div>
+      <label for="title">Título:</label>
+      <input type="text" id="title" formControlName="title" />
+    </div>
+    <div>
+      <label for="url">URL:</label>
+      <input type="text" id="url" formControlName="url" />
+    </div>
+    <div>
+      <label for="description">Descripción:</label>
+      <textarea id="description" formControlName="description"></textarea>
+    </div>
+    <div>
+      <label for="image">Imagen:</label>
+      <input type="file" id="image" (change)="onImageChange($event)" />
+    </div>
+
+    <button type="submit" class="button">Agregar</button>
+  </form>
+</main>
